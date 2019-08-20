@@ -31,5 +31,10 @@ namespace AnyStatus.API
                 OnPropertyChanged();
             }
         }
+
+        public override string ToString()
+        {
+            return _value != null ? _value.ToString() : string.Empty;
+        }
     }
 }
