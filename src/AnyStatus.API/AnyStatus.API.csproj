@@ -87,6 +87,7 @@
     <Compile Include="Common\Triggers\NotificationTrigger.cs" />
     <Compile Include="Common\Triggers\StateTrigger.cs" />
     <Compile Include="Common\Triggers\Trigger.cs" />
+    <Compile Include="Common\Utils\BytesFormatter.cs" />
     <Compile Include="Common\Utils\CollectionSynchronizer.cs" />
     <Compile Include="Widgets\Events\WidgetRemoved.cs" />
     <Compile Include="Widgets\Types\Build.cs" />

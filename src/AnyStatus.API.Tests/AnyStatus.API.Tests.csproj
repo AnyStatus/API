@@ -79,6 +79,7 @@
     <Compile Include="Common\Editors\PasswordEditorTests.cs" />
     <Compile Include="Common\MapperTests.cs" />
     <Compile Include="Common\CollectionSynchronizerTests.cs" />
+    <Compile Include="Common\BytesFormatterTests.cs" />
     <Compile Include="Widgets\Features\Uninitialize.cs" />
     <Compile Include="Widgets\StateTests.cs" />
     <Compile Include="Common\NotificationTests.cs" />
