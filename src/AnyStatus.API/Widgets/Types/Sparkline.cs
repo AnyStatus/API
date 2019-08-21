@@ -45,5 +45,10 @@ namespace AnyStatus.API
                 OnPropertyChanged();
             }
         }
+
+        public override string ToString()
+        {
+            return _value.ToString("0.#");
+        }
     }
 }

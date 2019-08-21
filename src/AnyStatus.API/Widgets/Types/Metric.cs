@@ -1,11 +1,11 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Xml.Serialization;
 
 namespace AnyStatus.API
 {
     public abstract class Metric : Widget, IMetric
     {
-        private string _symbol;
         private volatile object _value;
 
         [XmlIgnore]
@@ -22,15 +22,8 @@ namespace AnyStatus.API
 
         [XmlIgnore]
         [Browsable(false)]
-        public string Symbol
-        {
-            get => _symbol;
-            set
-            {
-                _symbol = value;
-                OnPropertyChanged();
-            }
-        }
+        [Obsolete("This property has been canceled. Please use the ToString() function instead.")]
+        public string Symbol { get; set; }
 
         public override string ToString()
         {

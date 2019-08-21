@@ -157,9 +157,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if $(ConfigurationName) == Debug_NuGet (
-    $(SolutionDir)nuget pack $(ProjectDir)$(ProjectName).nuspec
-    copy *.nupkg c:\nuget
-)</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
